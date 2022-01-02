@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+:root{
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+body{
+    font-family: "Poppins",sans-serif;
+    font-size: 15px;
+    background-color: var(--Very-Light-Gray);
+}
+.container{
+    margin:2rem auto 0rem auto;
+    max-width: 1200px;
+    
+}
+.head{
+    text-align: center;
+}
+.head h1{
+    font-weight: 600;
+}
+.head h1:first-child{
+    font-weight: 200;
+}
+.head p{
+    font-size: 0.79rem;
+    margin: 1rem auto 2rem auto;
+    line-height: 1.5;
+    max-width: 28.7rem;
+    color: var(--Grayish-Blue);
+}
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.col{
+    min-width: 220px;
+    max-width: 350px;
+    height: 250px;
+    margin: 1rem;
+    box-shadow: 1px 1px 20px -2px grey;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 2rem;
+    color: var(--Grayish-Blue);
+    font-weight: 400;
+}
+.main .box-1{
+    border-top: 5px solid var(--Cyan);
+    background: url('images/icon-supervisor.svg') no-repeat 90% 90%;
+}
+h3{
+    color: var(--Very-Dark-Blue);
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+.mid-up{
+    border-top: 5px solid var(--Red);
+    background: url("images/icon-team-builder.svg") no-repeat 90% 90%;
+}
+.mid-dn{
+    border-top: 5px solid var(--Orange);
+    background: url("images/icon-karma.svg") no-repeat 90% 90%;
+}
+.box-3{
+    border-top: 5px solid var(--Blue);
+    background: url("images/icon-calculator.svg") no-repeat 90% 90%;
+}
+@media (max-width:750px){
+    .main{
+        display: block;
+        
+    }
+    .col{
+        max-width: 325px;
+        margin: 1rem auto 1.5rem auto;
+    }
+    .head {
+        text-align: center;
+        max-width: 325px;
+        margin: auto;
+    }
+    .head h1{
+        font-size: 1.67rem;
+        width: 100%;
+    }
+    .head p{
+        font-size: 1rem;
+        margin: 1rem auto 5rem auto;
+    }
+}
+.attribution{ 
+    font-size: 11px; text-align: center; 
+}
+.attribution a{ 
+    color: hsl(228, 45%, 44%); 
+}
